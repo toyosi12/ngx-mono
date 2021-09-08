@@ -27,7 +27,7 @@ export class AppComponent {
   }
 
   onSuccess(data:IEventOptions){
-    console.log('successsss:  ', data);
+    console.log('success:  ', data);
   }
 
   onEvent(data:IEventOptions){

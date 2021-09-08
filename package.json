@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "publish": "ng build ngx-mono --prod && cd dist/ngx-mono && npm publish"
   },
   "private": true,
   "dependencies": {

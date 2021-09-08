@@ -40,7 +40,7 @@ import { IMonoOptions } from 'ngx-mono'
   }
 
   onSuccess(data:any){
-    console.log('successsss:  ', data);
+    console.log(data);
   }
 ```
 
@@ -62,10 +62,10 @@ import { IMonoOptions } from 'ngx-mono'
 | 3 | onClose   | no       | Called when a user has specifically exited the Mono Connect flow (i.e. the widget is not visible to the user). It does not take any arguments.                                                                      |
 | 4 | onEvent   | no       | Called when certain events in the Mono Connect flow have occurred, for example, when the user selected an institution. This enables your application to gain further insight into the Mono Connect onboarding flow. |
 
-## Events
+## EVENTS
 Below are the possible events that can be raised by the onEvent callback:
 |      Event Name      |                                              Description                                              |
-|:--------------------:|:-----------------------------------------------------------------------------------------------------:|
+|--------------------|-----------------------------------------------------------------------------------------------------|
 | OPENED               | Triggered when the user opens the Connect Widget.                                                     |
 | EXIT                 | Triggered when the user closes the Connect Widget.                                                    |
 | INSTITUTION_SELECTED | Triggered when the user selects an institution.                                                       |
@@ -88,7 +88,7 @@ This is to link a user's account
 ```ts
 import { IMonoOptions, IEventOptions } from 'ngx-mono';
  options:IMonoOptions = {
-   key: '<public_key>',
+   key: '<public_key>'
  }
 onSuccess(data:IEventOptions){
     console.log(data);
