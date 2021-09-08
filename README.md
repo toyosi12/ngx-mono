@@ -65,7 +65,7 @@ import { IMonoOptions } from 'ngx-mono'
 ## Events
 Below are the possible events that can be raised by the onEvent callback:
 |      Event Name      |                                              Description                                              |
-|:--------------------:|:-----------------------------------------------------------------------------------------------------:|
+|--------------------|-----------------------------------------------------------------------------------------------------|
 | OPENED               | Triggered when the user opens the Connect Widget.                                                     |
 | EXIT                 | Triggered when the user closes the Connect Widget.                                                    |
 | INSTITUTION_SELECTED | Triggered when the user selects an institution.                                                       |
